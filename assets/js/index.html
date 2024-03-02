@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Resume Builder</h1>
+    </header>
+    <main>
+      <section id="templateSelection">
+        <h2>Choose a Template</h2>
+        <select id="templateSelect">
+          <option value="template1">Template 1</option>
+          <option value="template2">Template 2</option>
+          <!-- Add more template options as needed -->
+        </select>
+      </section>
+      <section id="personalInfo">
+        <h2>Personal Information</h2>
+        <input type="text" id="fullName" placeholder="Full Name" />
+        <input type="text" id="email" placeholder="Email" />
+        <textarea id="address" placeholder="Address"></textarea>
+        <!-- Add more input fields for additional personal information -->
+        <input type="text" id="phone" placeholder="Phone Number" />
+        <input type="text" id="dob" placeholder="Date of Birth" />
+        <input type="text" id="linkedin" placeholder="LinkedIn Profile" />
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <input type="text" id="degree1" placeholder="Degree" />
+        <input type="text" id="university1" placeholder="University" />
+        <input type="text" id="graduation1" placeholder="Graduation Year" />
+        <!-- Add more input fields for additional education -->
+        <input type="text" id="degree2" placeholder="Degree" />
+        <input type="text" id="university2" placeholder="University" />
+        <input type="text" id="graduation2" placeholder="Graduation Year" />
+      </section>
+      <section id="workExperience">
+        <h2>Work Experience</h2>
+        <input type="text" id="jobTitle1" placeholder="Job Title" />
+        <input type="text" id="company1" placeholder="Company" />
+        <input type="text" id="duration1" placeholder="Duration" />
+        <textarea
+          id="responsibilities1"
+          placeholder="Responsibilities"
+        ></textarea>
+        <!-- Add more input fields for additional work experience -->
+        <input type="text" id="jobTitle2" placeholder="Job Title" />
+        <input type="text" id="company2" placeholder="Company" />
+        <input type="text" id="duration2" placeholder="Duration" />
+        <textarea
+          id="responsibilities2"
+          placeholder="Responsibilities"
+        ></textarea>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <input type="text" id="skill1" placeholder="Skill" />
+        <input type="text" id="skill2" placeholder="Skill" />
+        <input type="text" id="skill3" placeholder="Skill" />
+        <!-- Add more input fields for additional skills -->
+        <input type="text" id="skill4" placeholder="Skill" />
+        <input type="text" id="skill5" placeholder="Skill" />
+      </section>
+      <section id="preview">
+        <h2>Preview</h2>
+        <div id="resumePreview"></div>
+      </section>
+    </main>
+    <footer>
+      <button id="previewBtn">Preview</button>
+      <button id="downloadBtn">Download</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
